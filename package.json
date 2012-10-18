@@ -6,12 +6,8 @@
     "start": "node-gbc.js"
   },
   "dependencies": {
-    "express": "3.0.0rc4",
-    "ejs": "*",
     "jsdom": "*",
     "colors": "*",
-    "jquery": "*",
-    "request": "*",
     "expresso":   "*"
 
   }

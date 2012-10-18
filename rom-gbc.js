@@ -3,7 +3,6 @@
 var jsdom = require("jsdom")
 	,fs = require("fs")
 	,colors = require('colors')
-	,request = require('request')
 	,jquery = fs.readFileSync(process.env.PWD+"/jquery-1.8.2.min.js").toString();
 	;
 
