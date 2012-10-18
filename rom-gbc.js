@@ -1,35 +1,6 @@
 #!/usr/bin/env node
 
-var jsdom = require("jsdom")
-	,fs = require("fs")
-	,colors = require('colors')
-	,jquery = fs.readFileSync(process.env.PWD+"/jquery-1.8.2.min.js").toString();
-	;
-
-/*****************************
- *
- *	Bot Class
- *
- *	ex: var bot = new Bot();
- *
- *****************************/
-function Bot(){
-
-	this.load = function(domain, callback){
-		
-		console.log("Hit →".yellow, domain.green);
-
-		jsdom.env({
-		  html: domain,
-		  src: [jquery],
-		  done: callback
-		});
-
-	}
-
-	return(this);
-}
-
+var bot = require('./bot.js');
 
 
 /*****************************
@@ -51,4 +22,4 @@ function scrapROMS(errors, window) {
  *	Load ROM Bot
  *
  *****************************/
-var ROMBot = new Bot().load("http://www.roxdownload.net/rm/gbc/", scrapROMS);
+var ROMBot = bot.Bot().load("http://www.roxdownload.net/rm/gbc/", scrapROMS);
