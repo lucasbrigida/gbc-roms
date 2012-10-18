@@ -1,0 +1,7 @@
+var rom = require('./rom-gbc.node');
+
+
+exports['test String#rowdownload'] = function(){
+
+    assert.eql(new Bot().load("http://www.roxdownload.net/rm/gbc/", scrapROMS), "");
+};

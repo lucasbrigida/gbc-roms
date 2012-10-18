@@ -11,6 +11,8 @@
     "jsdom": "*",
     "colors": "*",
     "jquery": "*",
-    "request": "*"
+    "request": "*",
+    "expresso":   "*"
+
   }
 }
